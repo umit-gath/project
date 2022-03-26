@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+
+
+*{
+    font-family: 'Tajawal', 'Arial';
+    color: white;
+    /*
+    To prevent x axis scrolling
+    */
+    overflow-x: hidden;
+}
+
+
+.navbar{
+     background-image: linear-gradient(to right, #4948B8 , #06A5C1);
+}
+
+
+.nav-link {
+    color: #ffffff;
+    transition: 1s;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    color: #f8bd1c;
+    transition: 1s;
+}
+
+#HeadSec{
+    min-height: 25rem;
+    background-image: linear-gradient(to right, #4948B8 , #06A5C1);
+}
+
+.navbar-toggler {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.login-icon{
+    color: white;
+    fill: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 1s;
+    }
+
+.login-icon:hover{
+color: #f8bd1c;
+fill: #f8bd1c;
+transition: 1s;
+}
+
+#Head-Btn{
+    margin-top:25px;
+}
+
+#HeadText {
+    font-size: 60px;
+}
+
+#Head-Search{
+    width: 50%;
+}
+
+#HeadSec{
+    overflow: hidden;
+}
+
+
+#brands{
+    background-color:white;
+    overflow: hidden;
+}
+
+#brands-img{
+    width: 300px;
+    transition: 1s;
+}
+
+#brands-img:hover{
+    transform: scale(0.9);
+    transition: 1s;
+}
+
+footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+
+#catg{
+   background-color: white;
+}
+
+.catg-card{
+    margin-bottom: 50px;
+    transition: 1s;
+}
+
+.catg-card:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.catg-text{
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+}
+
+/* Animations */
+
+#head-photo{
+    max-width: 40%;
+    animation-name: HeadPhoto;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out ease-in-out;
+   z-index: 999;
+}
+
+  
+  @keyframes  HeadPhoto {
+    from {
+     transform: translateY(0);
+    }
+    45% {
+        
+     transform: scale(0.9);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+
+  /* Responsiveness */
+  @media screen and (max-width: 600px){
+    #HeadText {
+        font-size: 40px;
+      }
+
+      #head-photo{
+        max-width: 70%;
+      }
+
+      #Head-Search{
+          width: 80%;
+      }
+
+  }
