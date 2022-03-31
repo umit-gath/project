@@ -44,3 +44,8 @@ var x = setInterval(function() {
 }, 50);
 
 
+
+////Form Alert
+function myFunction() {
+    alert("تم ارسال النموذج !!");
+  }
